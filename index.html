@@ -80,5 +80,62 @@
       <a target="_blank" href="#">LinkedIn</a>
       <a target="_blank" href="#">Mail</a>
     </footer>
+    <hr />
+    <table border="1">
+      <tr>
+        <th>school name</th>
+        <th>class</th>
+        <th colspan="2">grade</th>
+      </tr>
+      <tr>
+        <td rowspan="3">GHS, Keezhappati</td>
+        <td rowspan="2">10th Class</td>
+        <td>A</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>d</td>
+      </tr>
+      <tr>
+        <td>college</td>
+        <td>First</td>
+        <td>Second</td>
+      </tr>
+    </table>
+    <hr />
+
+    <form action="/sumbit" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter you name"/>
+      <br>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <br>
+
+      <label for="color">choose color</label>
+      <select name="color" id="color">
+        <option value="red">RED</option>
+        <option value="blue">BLUE</option>
+        <option value="orange">ORANGE</option>
+      </select>
+      <br>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      <br>
+
+      <label for="password">password</label>
+      <input type="password" id="password" name="password">
+
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="reading" name="reading" value="yes">
+      <input type="checkbox" id="reading" name="reading" value="no">
+
+      <button type="submit">submit</button>
+    </form>
+
+    <hr />
   </body>
 </html>
